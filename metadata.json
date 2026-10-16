@@ -1,0 +1,6 @@
+{
+  "name": "Lou & Tika | Culinary Innovation & Atelier",
+  "description": "High-end culinary brand specializing in artisanal catering, B2B food innovation, and gourmet frozen market provisions.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

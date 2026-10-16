@@ -1,0 +1,192 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    /* Lou & Tika Official PDF Brand Palette */
+    --color-brand-green: #233D33;         /* Deep Forest Pine / Atelier Green */
+    --color-brand-green-dark: #182C24;    /* Ultra Deep Green */
+    --color-brand-green-light: #325547;   /* Hover / Accent Green */
+    --color-brand-cream: #FAF6F0;         /* Primary Signature Cream Background */
+    --color-brand-cream-card: #F4EFE6;    /* Secondary Warmer Surface Cream */
+    --color-brand-cream-border: #E8E1D5;  /* Subtle Cream Border */
+    --color-brand-ochre: #BA933E;         /* Warm Ochre / Dijon Mustard Gold */
+    --color-brand-ochre-hover: #A58032;   /* Deep Ochre */
+    --color-brand-text: #1E2824;          /* Deep Charcoal Pine */
+    --color-brand-muted: #5E6963;         /* Soft Editorial Sage Charcoal */
+  }
+
+  body {
+    background-color: var(--color-brand-cream);
+    color: var(--color-brand-text);
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+    letter-spacing: -0.01em;
+  }
+
+  /* Global Heading Hierarchy & Weight Enforcement: Headings are Bold (700) and prominent */
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+    color: var(--color-brand-green-dark);
+    letter-spacing: -0.015em;
+  }
+
+  h1 {
+    font-size: clamp(2.25rem, 5vw, 4.5rem);
+    line-height: 1.1;
+    font-weight: 700;
+  }
+
+  h2 {
+    font-size: clamp(1.75rem, 3.5vw, 3rem);
+    line-height: 1.2;
+    font-weight: 700;
+  }
+
+  h3 {
+    font-size: clamp(1.35rem, 2.5vw, 2rem);
+    line-height: 1.25;
+    font-weight: 700;
+  }
+
+  h4 {
+    font-size: clamp(1.1rem, 1.8vw, 1.35rem);
+    line-height: 1.35;
+    font-weight: 700;
+  }
+}
+
+.font-serif-luxury {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+}
+
+.font-sans-luxury {
+  font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+}
+
+/* UI/UX Expert Palette Utilities */
+.bg-brand-cream {
+  background-color: #FAF6F0;
+}
+
+.bg-brand-cream-card {
+  background-color: #F4EFE6;
+}
+
+.bg-brand-green {
+  background-color: #233D33;
+}
+
+.bg-brand-green-dark {
+  background-color: #182C24;
+}
+
+.bg-brand-ochre {
+  background-color: #BA933E;
+}
+
+.text-brand-green {
+  color: #233D33;
+}
+
+.text-brand-ochre {
+  color: #BA933E;
+}
+
+.text-brand-muted {
+  color: #5E6963;
+}
+
+.border-brand-cream {
+  border-color: #E8E1D5;
+}
+
+.border-brand-green {
+  border-color: #233D33;
+}
+
+.border-brand-ochre {
+  border-color: #BA933E;
+}
+
+/* Primary Brand Buttons */
+.btn-brand-green {
+  background-color: #233D33;
+  color: #FFFFFF;
+  font-weight: 500;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.btn-brand-green:hover {
+  background-color: #182C24;
+  color: #FAF6F0;
+  box-shadow: 0 4px 14px rgba(35, 61, 51, 0.25);
+  transform: translateY(-1px);
+}
+
+.btn-brand-ochre {
+  background-color: #BA933E;
+  color: #FFFFFF;
+  font-weight: 500;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.btn-brand-ochre:hover {
+  background-color: #A58032;
+  color: #FFFFFF;
+  box-shadow: 0 4px 14px rgba(186, 147, 62, 0.28);
+  transform: translateY(-1px);
+}
+
+.btn-brand-outline {
+  border: 1px solid #233D33;
+  color: #233D33;
+  background-color: transparent;
+  transition: all 0.25s ease;
+}
+
+.btn-brand-outline:hover {
+  background-color: #233D33;
+  color: #FAF6F0;
+}
+
+.btn-brand-outline-light {
+  border: 1px solid rgba(250, 246, 240, 0.4);
+  color: #FAF6F0;
+  background-color: transparent;
+  transition: all 0.25s ease;
+}
+
+.btn-brand-outline-light:hover {
+  border-color: #FAF6F0;
+  background-color: rgba(250, 246, 240, 0.1);
+  color: #FFFFFF;
+}
+
+/* Clean, Calm Card */
+.brand-card-light {
+  background-color: #FFFFFF;
+  border: 1px solid #E8E1D5;
+  box-shadow: 0 1px 3px rgba(35, 61, 51, 0.04);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.brand-card-light:hover {
+  border-color: #D6CDC0;
+  box-shadow: 0 10px 25px -4px rgba(35, 61, 51, 0.08);
+  transform: translateY(-2px);
+}
+
+/* Subtle Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #FAF6F0;
+}
+::-webkit-scrollbar-thumb {
+  background: #D8D0C3;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #233D33;
+}
